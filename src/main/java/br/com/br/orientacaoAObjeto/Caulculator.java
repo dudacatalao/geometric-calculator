@@ -1,15 +1,15 @@
 package br.com.br.orientacaoAObjeto;
 
-public class Caulculator{
+public class CaulculatorFlat{
     String name; //creating attributes
     double price;
     double discount;
 
-    Caulculator(){ // the constructor is already executed/initialized when instantiating the object
+    CaulculatorFlat(){ // the constructor is already executed/initialized when instantiating the object
         System.out.println("Constructor of the class");
     }
 
-    Caulculator(String name, double price, double discount){ //constructor with 3 parameters
+    CaulculatorFlat(String name, double price, double discount){ //constructor with 3 parameters
         this.name = name; //this it's the same as self "in python
         this.price = price;
         this.discount = discount;
