@@ -1,10 +1,11 @@
 package br.com.br.orientacaoAObjeto;
-
 import java.util.Scanner;
+import br.com.br.orientacaoAObjeto.CaulculatorFlat;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Scanner sc = new Scanner(System.in);
+        CaulculatorFlat calculatorFlat = new CaulculatorFlat();
         System.out.println("\n" +
                 "█▀▀ █▀▀ █▀█ █▀▄▀█ █▀▀ ▀█▀ █▀█ █ █▀▀   █▀▀ ▄▀█ █░░ █▀▀ █░█ █░░ ▄▀█ ▀█▀ █▀█ █▀█\n" +
                 "█▄█ ██▄ █▄█ █░▀░█ ██▄ ░█░ █▀▄ █ █▄▄   █▄▄ █▀█ █▄▄ █▄▄ █▄█ █▄▄ █▀█ ░█░ █▄█ █▀▄");
@@ -15,12 +16,14 @@ public class Main {
         System.out.println("[1] Flat");
         System.out.println("[2] Spaciais");
         int option = sc.nextInt();
+        System.out.println("Loading...");
+        Thread.sleep(2000);
 
         try {
             switch (option) {
                 case 1:
                     System.out.println("[1] Square");
-                    System.out.println("[2] Retangulo");
+                    System.out.println("[2] Rectangle");
                     System.out.println("[3] Triangulo Equilatero");
                     System.out.println("[4] Circulo");
                     System.out.println("[5] Hexagono Regular");
@@ -35,10 +38,14 @@ public class Main {
 
                             switch (thirdOption) {
                                 case 1:
-                                    // função aqui
+                                    System.out.print("Insert the value of the side: ");
+                                    double side = sc.nextDouble();
+                                    calculatorFlat.squareArea(side);
                                     break;
                                 case 2:
-                                    // função aqui
+                                    System.out.print("Insert the value of the side: ");
+                                    double sideSquare = sc.nextDouble();
+                                    calculatorFlat.squarePerimeter(sideSquare);
                                     break;
                             }
                             break;
@@ -50,10 +57,16 @@ public class Main {
 
                             switch (fourthOption) {
                                 case 1:
-                                    // função aqui
+                                    System.out.print("Insert the value of the base: ");
+                                    double base = sc.nextDouble();
+                                    System.out.print("Insert the value of the height: ");
+                                    double height = sc.nextDouble();
+                                    calculatorFlat.retangleArea(base,height);
                                     break;
                                 case 2:
-                                    // função aqui
+                                    System.out.print("Insert the value of the base: ");
+                                    double baseRetangle = sc.nextDouble();
+                                    calculatorFlat.retanglePerimeter(baseRetangle);
                                     break;
                             }
                             break;
