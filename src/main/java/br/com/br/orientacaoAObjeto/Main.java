@@ -78,10 +78,16 @@ public class Main {
 
                             switch (fifthOption) {
                                 case 1:
-                                    // função aqui
+                                    System.out.print("Insert the value of the base: ");
+                                    double base = sc.nextDouble();
+                                    calculatorFlat.triangleArea(base);
                                     break;
                                 case 2:
-                                    // função aqui
+                                    System.out.print("Insert the value of the base: ");
+                                    double baseTriangle = sc.nextDouble();
+                                    System.out.print("Insert the value of the height: ");
+                                    double height = sc.nextDouble();
+                                    calculatorFlat.trianglePerimeter(baseTriangle, height);
                                     break;
                             }
                             break;
@@ -93,10 +99,14 @@ public class Main {
 
                             switch (sixthOption) {
                                 case 1:
-                                    // função aqui
+                                    System.out.print("Insert the value of the ray: ");
+                                    double ray = sc.nextDouble();
+                                    calculatorFlat.circleArea(ray);
                                     break;
                                 case 2:
-                                    // função aqui
+                                    System.out.print("Insert the value of the ray: ");
+                                    double raySecond = sc.nextDouble();
+                                    calculatorFlat.circlePerimeter(raySecond);
                                     break;
                             }
                             break;
@@ -108,10 +118,14 @@ public class Main {
 
                             switch (seventhOption) {
                                 case 1:
-                                    // função aqui
+                                    System.out.print("Insert the value of the side: ");
+                                    double side = sc.nextDouble();
+                                    calculatorFlat.hexagonArea(side);
                                     break;
                                 case 2:
-                                    // função aqui
+                                    System.out.print("Insert the value of the side: ");
+                                    double sideHexagon = sc.nextDouble();
+                                    calculatorFlat.hexagonPerimeter(sideHexagon);
                                     break;
                             }
                             break;
