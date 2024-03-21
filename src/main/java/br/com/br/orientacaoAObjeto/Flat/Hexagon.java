@@ -2,9 +2,8 @@ package br.com.br.orientacaoAObjeto.Flat;
 
 public class Hexagon extends CaulculatorFlat{
     double side;
-
-    public Hexagon(){
-        this.side = side;
+    public Hexagon(double side){
+        this.side = this.side;
     }    double hexagonArea(){
         return (side * 6) * 0.5;
     }

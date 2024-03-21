@@ -4,8 +4,8 @@ public class Parallelepipid extends CaulculatingSpaciais{
     double length;
     double width;
     double height;
-    public Parallelepipid(){
-        this.length = length;
+    public Parallelepipid(double length, double height, double width){
+        this.length = this.length;
         this.width = width;
         this.height = height;
     }

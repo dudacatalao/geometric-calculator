@@ -1,20 +1,8 @@
 package br.com.br.orientacaoAObjeto.Flat;
 import java.util.Scanner;
-import br.com.br.orientacaoAObjeto.Flat.CaulculatorFlat;
-import br.com.br.orientacaoAObjeto.Flat.Circle;
-import br.com.br.orientacaoAObjeto.Flat.Hexagon;
-import br.com.br.orientacaoAObjeto.Flat.Rectangle;
-import br.com.br.orientacaoAObjeto.Flat.Square;
-import br.com.br.orientacaoAObjeto.Flat.Triangle;
 
 public class CaulculatorFlat {
     Scanner sc = new Scanner(System.in);
-    Circle circle = new Circle();
-    Hexagon hexagon = new Hexagon();
-    Rectangle rectangle = new Rectangle();
-    Square square = new Square();
-    Triangle triangle = new Triangle();
-
     String menu() {
         System.out.println("[1] Square");
         System.out.println("[2] Rectangle");
@@ -26,100 +14,150 @@ public class CaulculatorFlat {
         switch (secondOption) {
             case 1: //square
                 System.out.println("Do you want to calculate:");
-                System.out.println("[1] area");
-                System.out.println("[2] perimetro");
-                int thirdOption = sc.nextInt();
+                System.out.println("[1] Area");
+                System.out.println("[2] Perimeter");
+                int squareOption = sc.nextInt();
 
-                switch (thirdOption) {
+                switch (squareOption) {
                     case 1:
                         System.out.print("Insert the value of the side: ");
                         double side = sc.nextDouble();
-                        circle.circleArea();
+
+                        Square square = new Square(side);
+                        System.out.println(square.squareArea());
+
                         break;
+
                     case 2:
                         System.out.print("Insert the value of the side: ");
                         double sideSquare = sc.nextDouble();
-                        circle.circlePerimeter();
+                        Square square2 = new Square(sideSquare);
+                        System.out.println(square2.squarePerimeter());
+
                         break;
                 }
                 break;
+
             case 2: //retangulo
                 System.out.println("Do you want to calculate:");
-                System.out.println("[1] area");
-                System.out.println("[2] perimetro");
-                int fourthOption = sc.nextInt();
+                System.out.println("[1] Area");
+                System.out.println("[2] Perimeter");
+                int rectangleOption = sc.nextInt();
 
-                switch (fourthOption) {
+                switch (rectangleOption) {
                     case 1:
-                        System.out.print("Insert the value of the base: ");
+                        System.out.print("Insert the values of the base: ");
                         double base = sc.nextDouble();
-                        System.out.print("Insert the value of the height: ");
+                        System.out.print("Insert the values of the height: ");
                         double height = sc.nextDouble();
-                        rectangle.retangleArea();
+                        System.out.print("Insert the values of the side: ");
+                        double side = sc.nextDouble();
+
+                        Rectangle rectangle = new Rectangle(base,height,side);
+                        System.out.println(rectangle.retangleArea());
+
                         break;
+
                     case 2:
-                        System.out.print("Insert the value of the base: ");
-                        double baseRetangle = sc.nextDouble();
-                        rectangle.retanglePerimeter();
+                        System.out.print("Insert the values of the base: ");
+                        double base2 = sc.nextDouble();
+                        System.out.print("Insert the values of the height: ");
+                        double height2 = sc.nextDouble();
+                        System.out.print("Insert the values of the side: ");
+                        double side2 = sc.nextDouble();
+
+                        Rectangle rectangle2 = new Rectangle(base2,height2,side2);
+                        System.out.println(rectangle2.retanglePerimeter());
+
                         break;
                 }
                 break;
+
             case 3: //triangulo equilatero
                 System.out.println("Do you want to calculate:");
-                System.out.println("[1] area");
-                System.out.println("[2] perimetro");
-                int fifthOption = sc.nextInt();
+                System.out.println("[1] Area");
+                System.out.println("[2] Perimeter");
+                int triangleOption = sc.nextInt();
 
-                switch (fifthOption) {
+                switch (triangleOption) {
                     case 1:
                         System.out.print("Insert the value of the base: ");
                         double base = sc.nextDouble();
-                        triangle.triangleArea();
-                        break;
-                    case 2:
-                        System.out.print("Insert the value of the base: ");
-                        double baseTriangle = sc.nextDouble();
+                        System.out.print("Insert the value of the side: ");
+                        double side = sc.nextDouble();
                         System.out.print("Insert the value of the height: ");
                         double height = sc.nextDouble();
-                        triangle.trianglePerimeter();
+
+                        Triangle triangle = new Triangle(side, base, height);
+                        System.out.println(triangle.triangleArea());
+
                         break;
+
+                    case 2:
+                        System.out.print("Insert the value of the base: ");
+                        double base2 = sc.nextDouble();
+                        System.out.print("Insert the value of the side: ");
+                        double side2 = sc.nextDouble();
+                        System.out.print("Insert the value of the height: ");
+                        double height2 = sc.nextDouble();
+
+                        Triangle triangle2 = new Triangle(side2, base2, height2);
+                        System.out.println(triangle2.trianglePerimeter());
+
+                        break;
+
                 }
                 break;
+
             case 4: //circulo
                 System.out.println("Do you want to calculate:");
-                System.out.println("[1] area");
-                System.out.println("[2] perimetro");
-                int sixthOption = sc.nextInt();
+                System.out.println("[1] Area");
+                System.out.println("[2] Perimeter");
+                int circleOption = sc.nextInt();
 
-                switch (sixthOption) {
+                switch (circleOption) {
                     case 1:
                         System.out.print("Insert the value of the ray: ");
                         double ray = sc.nextDouble();
-                        circle.circleArea();
+
+                        Circle circle = new Circle(ray);
+                        System.out.println(circle.circleArea());
+
                         break;
+
                     case 2:
                         System.out.print("Insert the value of the ray: ");
                         double raySecond = sc.nextDouble();
-                        circle.circlePerimeter();
+
+                        Circle circle2 = new Circle(raySecond);
+                        System.out.println(circle2.circlePerimeter());
+
                         break;
                 }
                 break;
+
             case 5: //hexagono regular
                 System.out.println("Do you want to calculate:");
-                System.out.println("[1] area");
-                System.out.println("[2] perimetro");
-                int seventhOption = sc.nextInt();
+                System.out.println("[1] Area");
+                System.out.println("[2] Perimeter");
+                int hexagonOption = sc.nextInt();
 
-                switch (seventhOption) {
+                switch (hexagonOption) {
                     case 1:
                         System.out.print("Insert the value of the side: ");
                         double side = sc.nextDouble();
-                        hexagon.hexagonArea();
+
+                        Hexagon hexagon = new Hexagon(side);
+                        System.out.println(hexagon.hexagonArea());
                         break;
+
                     case 2:
                         System.out.print("Insert the value of the side: ");
                         double sideHexagon = sc.nextDouble();
-                        hexagon.hexagonPerimeter();
+
+                        Hexagon hexagon2 = new Hexagon(sideHexagon);
+                        System.out.println(hexagon2.hexagonPerimeter());
+
                         break;
                 }
                 break;

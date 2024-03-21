@@ -3,8 +3,8 @@ package br.com.br.orientacaoAObjeto.Flat;
 public class Square extends CaulculatorFlat {
     double side;
 
-    public Square(){
-        this.side = side;
+    public Square(double side){
+        this.side = this.side;
     }
     double squareArea(){
         return side * side;

@@ -4,9 +4,9 @@ public class Cone extends CaulculatingSpaciais{
     double ray;
     double width;
 
-    public Cone(){
-        this.ray = ray;
-        this.width = width;
+    public Cone(double ray, double width){
+        this.ray = this.ray;
+        this.width = this.width;
     }
     double coneVolume(){
         return (1.0/3.0) * Math.PI * ray * ray * width;

@@ -5,10 +5,10 @@ public class Triangle extends CaulculatorFlat{
     double base;
     double height;
 
-    public Triangle(){
-        this.side = side;
-        this.base = base;
-        this.height = height;
+    public Triangle(double side, double base, double height){
+        this.side = this.side;
+        this.base = this.base;
+        this.height = this.height;
 
     }
     double triangleArea(){

@@ -7,13 +7,14 @@ public class Pyramid extends CaulculatingSpaciais{
     double apothem;
     double areaBase;
 
-    public Pyramid(){
+    public Pyramid(double side, double width, double baseEdge, double apothem, double areaBase){
         this.side = side;
         this.width = width;
         this.baseEdge = baseEdge;
         this.apothem = apothem;
         this.areaBase = areaBase;
     }
+
 
     double pyramidVolume(){
         areaBase = side * side;

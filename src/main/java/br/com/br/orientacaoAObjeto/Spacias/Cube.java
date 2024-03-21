@@ -3,7 +3,7 @@ package br.com.br.orientacaoAObjeto.Spacias;
 public class Cube extends CaulculatingSpaciais{
     double side;
 
-    public Cube(){
+    public Cube(double side){
         this.side = side;
     }
     double cubeVolume(){

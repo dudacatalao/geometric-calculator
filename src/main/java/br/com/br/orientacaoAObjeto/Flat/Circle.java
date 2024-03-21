@@ -2,7 +2,7 @@ package br.com.br.orientacaoAObjeto.Flat;
 
 public class Circle extends CaulculatorFlat{
     double ray;
-    public Circle(){
+    public Circle(double ray){
         this.ray = ray;
     }
     double circleArea(){

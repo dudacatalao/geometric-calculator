@@ -3,9 +3,9 @@ package br.com.br.orientacaoAObjeto.Spacias;
 public class Cylinder extends CaulculatingSpaciais{
     double width;
     double ray;
-    public Cylinder(){
-        this.width = width;
-        this.ray = ray;
+    public Cylinder(double width, double ray){
+        this.width = this.width;
+        this.ray = this.ray;
     }
     double cylinderVolume(){
         return Math.PI * width * (ray * ray);

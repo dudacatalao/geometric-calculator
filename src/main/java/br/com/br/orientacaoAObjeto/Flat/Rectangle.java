@@ -5,9 +5,9 @@ public class Rectangle extends CaulculatorFlat{
     double height;
     double side;
 
-    public Rectangle(){
-        this.base = base;
-        this.height = height;
+    public Rectangle(double base, double height,double side){
+        this.base = this.base;
+        this.height = this.height;
         this.side = side;
     }
     double retangleArea(){
