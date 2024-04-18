@@ -2,6 +2,10 @@ package br.com.br.orientacaoAObjeto.Flat;
 import java.util.Scanner;
 
 public class CaulculatorFlat {
+    String nameUser;
+    public CaulculatorFlat(String nameUser){
+        this.nameUser = nameUser;
+    }
     Scanner sc = new Scanner(System.in);
     String menu() {
         System.out.println("[1] Square");

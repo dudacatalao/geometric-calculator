@@ -1,19 +1,15 @@
 package br.com.br.orientacaoAObjeto.Spacias;
-import br.com.br.orientacaoAObjeto.Spacias.CaulculatingSpaciais;
-import br.com.br.orientacaoAObjeto.Spacias.Cube;
-import br.com.br.orientacaoAObjeto.Spacias.Cone;
-import br.com.br.orientacaoAObjeto.Spacias.Cylinder;
-import br.com.br.orientacaoAObjeto.Spacias.Parallelepipid;
-import br.com.br.orientacaoAObjeto.Spacias.Pyramid;
-import br.com.br.orientacaoAObjeto.Spacias.Sphere;
 import java.util.Scanner;
 
 public class CaulculatingSpaciais{
+    String nameUser;
+    public CaulculatingSpaciais(String nameUser){
+        this.nameUser = nameUser;
+    }
     Scanner sc = new Scanner(System.in);
 
-
     String menu(){
-        System.out.println("Which spatial shape do you want to calculate, %s?",);
+        System.out.println("Which spatial shape do you want to calculate, %s?");
         System.out.println("[1] Cubo");
         System.out.println("[2] Paralelepipido");
         System.out.println("[3] Esfera");

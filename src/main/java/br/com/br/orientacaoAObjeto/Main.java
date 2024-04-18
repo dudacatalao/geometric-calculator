@@ -1,5 +1,7 @@
 package br.com.br.orientacaoAObjeto;
 import java.util.Scanner;
+import br.com.br.orientacaoAObjeto.Spacias.CaulculatingSpaciais;
+import br.com.br.orientacaoAObjeto.Flat.CaulculatorFlat;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
@@ -27,10 +29,11 @@ public class Main {
         try {
             switch (option) {
                 case 1:
-
+                    CaulculatorFlat(nameUser);
                     break;
                 case 2:
-
+                    CaulculatingSpaciais(nameUser);
+                    break;
                 default:
                     System.out.println("Invalid data, try again.");
             }
