@@ -3,11 +3,12 @@ import java.util.Scanner;
 
 public class CaulculatorFlat {
     String nameUser;
-    public CaulculatorFlat(String nameUser){
+    public CaulculatorFlat(){
         this.nameUser = nameUser;
     }
     Scanner sc = new Scanner(System.in);
-    String menu() {
+
+    public String menu() {
         System.out.println("[1] Square");
         System.out.println("[2] Rectangle");
         System.out.println("[3] Triangulo Equilatero");
@@ -28,7 +29,8 @@ public class CaulculatorFlat {
                         double side = sc.nextDouble();
 
                         Square square = new Square(side);
-                        System.out.println(square.squareArea());
+                        double sideArea = square.squareArea();
+                        System.out.println(sideArea);
 
                         break;
 

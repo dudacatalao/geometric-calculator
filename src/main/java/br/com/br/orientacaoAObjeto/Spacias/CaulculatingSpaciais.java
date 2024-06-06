@@ -3,12 +3,12 @@ import java.util.Scanner;
 
 public class CaulculatingSpaciais{
     String nameUser;
-    public CaulculatingSpaciais(String nameUser){
+    public CaulculatingSpaciais(){
         this.nameUser = nameUser;
     }
     Scanner sc = new Scanner(System.in);
 
-    String menu(){
+    public String menu(){
         System.out.println("Which spatial shape do you want to calculate, %s?");
         System.out.println("[1] Cubo");
         System.out.println("[2] Paralelepipido");

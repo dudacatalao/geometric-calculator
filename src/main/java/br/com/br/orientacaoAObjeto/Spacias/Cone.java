@@ -5,6 +5,7 @@ public class Cone extends CaulculatingSpaciais{
     double width;
 
     public Cone(double ray, double width){
+        super();
         this.ray = this.ray;
         this.width = this.width;
     }
